@@ -22,9 +22,10 @@ public class Home extends AppCompatActivity {
 
 
 
-        Button btn,profile;
+        Button btn,profile,fragmnet;
         btn=findViewById(R.id.intent);
         profile=findViewById(R.id.Profile);
+        fragmnet=findViewById(R.id.fragment);
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +38,13 @@ public class Home extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i =new Intent(Home.this,Intentscreen.class);
                 startActivity(i);
+            }
+        });
+
+        fragmnet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(Home.this,Fragmentscreen.class);
             }
         });
     }
