@@ -22,14 +22,23 @@ public class Home extends AppCompatActivity {
 
 
 
-        Button btn,profile,fragmnet;
+        Button btn,profile,fragmnet,todo,sound;
+        sound=findViewById(R.id.sound);
         btn=findViewById(R.id.intent);
         profile=findViewById(R.id.Profile);
         fragmnet=findViewById(R.id.fragment);
+        todo=findViewById(R.id.todo);
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent n=new Intent(Home.this,Profilescreen.class);
+                startActivity(n);
+            }
+        });
+        sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent n=new Intent(Home.this,Soundactivity.class);
                 startActivity(n);
             }
         });
@@ -45,6 +54,14 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i =new Intent(Home.this,Fragmentscreen.class);
+                startActivity(i);
+            }
+        });
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(Home.this,Fragmentscreen.class);
+                startActivity(i);
             }
         });
     }

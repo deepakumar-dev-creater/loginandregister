@@ -19,8 +19,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loginandregister">
         <activity
+            android:name=".Soundactivity"
+            android:exported="false" />
 
-            android:name=".MainActivity"
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+        MainActivity
+        <activity
+            android:name=".todoscreen"
+            android:exported="false" />
+        <activity
+            android:name=".Fragmentscreen"
             android:exported="false" />
         <activity
             android:name=".Settings"
@@ -37,8 +48,9 @@
         <activity
             android:name=".Register"
             android:exported="false" />
+
         <activity
-            android:name=".Fragmentscreen"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
