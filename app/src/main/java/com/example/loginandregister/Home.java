@@ -60,7 +60,7 @@ public class Home extends AppCompatActivity {
         todo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(Home.this,Fragmentscreen.class);
+                Intent i =new Intent(Home.this,todoscreen.class);
                 startActivity(i);
             }
         });

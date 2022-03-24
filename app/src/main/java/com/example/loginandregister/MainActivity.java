@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     if (usernametxt.equals("Harman") && passwordtxt.equals("Harman")){
-                        Toast.makeText(MainActivity.this,"Login in.....",Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(MainActivity.this,Home.class));
                     }
                 }

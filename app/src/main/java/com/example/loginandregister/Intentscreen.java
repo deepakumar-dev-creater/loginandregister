@@ -19,11 +19,20 @@ public class Intentscreen extends AppCompatActivity {
         setContentView(R.layout.activity_intent);
 
 
-        Button sms,email,call,browser;
+        Button sms,email,call,browser,next;
         sms=findViewById(R.id.sms);
         email=findViewById(R.id.sendemail);
         call=findViewById(R.id.call);
         browser=findViewById(R.id.browser);
+        next=findViewById(R.id.nextscreen);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(Intentscreen.this,Home.class);
+                startActivity(i);
+            }
+        });
+
         sms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
